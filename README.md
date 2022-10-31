@@ -1,7 +1,7 @@
 # WanglePC.github.io
 
 
-Fully Working Website :- http://wanglepc.infinityfreeapp.com/index.html
+Fully Working Website :- https://uditrawall.github.io/wanglepc/
 
 
 This is a virtual gaming platform.
