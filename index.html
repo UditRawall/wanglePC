@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WanglePC</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #6699ff; background-image: linear-gradient(140deg,#EADEDB 0%, #BC70A4 50%, #BFD641 75%);">
+
+<div class="container_img_header">
+  <div class="text_img_header">WanglePC</div>
+</div>
+
+
+<nav class="navbar navbar_header navbar-expand-lg navbar-dark bg-dark " role="navigation">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">WanglePC</a>
+        <button class="btn_header navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+        </button>
+        <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="AboutUs.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="Games.html" class="nav-link">Games</a></li>
+                <li class="nav-item"><a href="Blogs.html" class="nav-link">Blogs</a></li>
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                <li class="dropdown order-1">
+                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn_header btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right mt-2">
+                       <li class="px-3 py-2">
+                           <form action="validation.php" method="post" class="form" role="form">
+                                <div class="form-group">
+                                    <input id="emailInput" placeholder="Username" class="form-control form-control-sm" type="text" name="username" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="password" name="password" required="">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn_header btn btn-primary btn-block">Login</button>
+                                </div>
+                                <div class="form-group text-center">
+                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown order-1">
+                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn_header btn btn-outline-secondary dropdown-toggle">SignUp<span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right mt-2">
+                       <li class="px-3 py-2">
+                           <form action="registration.php" method="post" class="form" role="form">
+                                <div class="form-group">
+                                    <input id="emailInput" placeholder="Name" class="form-control form-control-sm" type="text" name="name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input id="emailInput" placeholder="Username" class="form-control form-control-sm" type="text" name="username" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input id="emailInput" placeholder="Email-ID" class="form-control form-control-sm" type="text" name="email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="password" name="password" required="">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn_header btn btn-primary btn-block">Login</button>
+                                </div>
+                                <div class="form-group text-center">
+                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Forgot password</h3>
+                <button type="button" class="btn_header close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Reset your password..</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn_header" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn btn_header btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br><br><br><br><br><br>
+<h2 class="Games_text" style="text-align:center">GAMES</h2>
+<br><br>
+
+
+<div class="container-fluid con_slideslow">
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+    <img class="img_slideslow" src="images\CyberPunk(Slide slow).jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+    <img  class="img_slideslow" src="images\GTA 5(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+    <img  class="img_slideslow" src="images\Valorant(Slide Slow).webp" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img class="img_slideslow" src="images\COD(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+    <img  class="img_slideslow" src="images\Rocket Leauge(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+    <img  class="img_slideslow" src="images\Fortnite(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+    <img  class="img_slideslow" src="images\CSGO(Slide Slow).webp" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+    <img  class="img_slideslow" src="images\ITT(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+    <img  class="img_slideslow" src="images\FIFA(Slide Slow).png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+    <img  class="img_slideslow" src="images\APEX(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+    <img  class="img_slideslow" src="images\Wayout(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+    <img  class="img_slideslow" src="images\Fallguys(Slide Slow).jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row row_slideslow">
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\CyberPunk(Slide slow).jpeg" style="width:100%" onclick="currentSlide(1)" alt="Cyberpunk 2077">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\GTA 5(Slide Slow).jpg" style="width:100%" onclick="currentSlide(2)" alt="Grand Theft Auto V">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\Valorant(Slide Slow).webp" style="width:100%" onclick="currentSlide(3)" alt="Valorant">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\COD(Slide Slow).jpg" style="width:100%" onclick="currentSlide(4)" alt="Call of Duty: Warzone">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\Rocket Leauge(Slide Slow).jpg" style="width:100%" onclick="currentSlide(5)" alt="Rocket League">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\Fortnite(Slide Slow).jpg" style="width:100%" onclick="currentSlide(6)" alt="Fortnite">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\CSGO(Slide Slow).webp" style="width:100%" onclick="currentSlide(7)" alt="Counter-Strike: Global Offensive">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\ITT(Slide Slow).jpg" style="width:100%" onclick="currentSlide(8)" alt="It Takes Two">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\FIFA(Slide Slow).png" style="width:100%" onclick="currentSlide(9)" alt="FIFA 21">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\APEX(Slide Slow).jpg" style="width:100%" onclick="currentSlide(10)" alt="Apex Legends">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\Wayout(Slide Slow).jpg" style="width:100%" onclick="currentSlide(11)" alt="A Way Out">
+    </div>
+    <div class="column column_slideslow">
+      <img class="demo cursor" src="images\Fallguys(Slide Slow).jpg" style="width:100%" onclick="currentSlide(12)" alt="Fall Guys: Ultimate Knockout">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br>
+<center>
+<a href="SignUp_form.html" class="button_form"><span class="three_button_text" style="color:black;font-weight:bold;">Sign Up</span></a>
+<a href="Login_form.html" class="button_form"><span class="three_button_text" style="color:black; font-weight:bold;">Login</span></a>
+<a href="Contact_form.html" class="button_form"><span class="three_button_text" style="color:black;font-weight:bold;">Contact</span></a>
+</center>
+
+<br><br><br><br><br><br><br><br><br>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row_about">
+  <div class="column_about">
+    <div style="border:3px solid black; background-color:white;" class="card_about">
+      <img src="images\IMG_20220911_153309.jpg" alt="TAKTAM" style="width:100%">
+      <div class="container_about"><center>
+        <h2>UDIT RAWAL</h2>
+        <p class="title_about">CEO</p>
+        <p>B.Sc computer science with Specialization in web development</p>
+        <a href="https://www.linkedin.com/in/udit-rawal-72984b252">LinkedIn Profile</a></center>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column_about">
+    <div style="border:3px solid black; background-color:white;" class="card_about">
+      <img src="images\utsav.jpg.jpg" alt="John" style="width:100%">
+      <div class="container_about"><center>
+        <h2>UTSAV THAKUR</h2>
+        <p class="title_about">CONTENT WRITER</p>
+        <p>B.Sc computer science</p>
+        <a href="https://www.linkedin.com">LinkedIn Profile</a></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br>
+<center><a class="button_about" href="mailto:someone@gmail.com?Subject=Hello%20again" target="_top">Contact</a></center>
+
+
+<br><br><br><br><br><br><br><br><br>
+<div class="container_form">
+  <form action="validation.php" method="post">
+    <div class="row_form">
+      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col_form">
+        <a href="https://www.facebook.com/" class="fb  btn_form">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter  btn_form">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="https://myaccount.google.com/intro/profile" class="google btn_form"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col_form ">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input class="input_form" type="text" name="user" placeholder="Username" required>
+        <input class="input_form" type="password" name="password" placeholder="Password" required>
+        <button type="submit" class="input_form">Login</button>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row_form ">
+    <div class="col_form ">
+      <a href="#" style="color:white" class="btn_form">Sign up</a>
+    </div>
+    <div class="col_form ">
+      <a href="#" style="color:white" class="btn_form">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br>
+<footer class="footer-distributed">
+
+ <div class="footer-left">
+
+ <h3>Wangle<span>PC</span></h3>
+
+ <p class="footer-links">
+ <a href="index.html">Home</a>
+ ·
+ <a href="Blogs.html">Blogs</a>
+ ·
+ <a href="AboutUs.html">AboutUs</a>
+ ·
+ <a href="Games.html">Games</a>
+ .
+ <a href="#">FAQ</a>
+ ·
+ <a href="mailto:someone@gmail.com?Subject=Hello%20again">Contact</a>
+ </p>
+
+ <p class="footer-company-name">wanglepc &copy; 2022</p>
+ </div>
+
+ <div class="footer-center">
+
+ <div>
+ <i class="fa fa-map-marker"></i>
+ <p><span>Dyal singh college <br />delhi university</span> Delhi, India</p>
+ </div>
+
+ <div>
+ <i class="fa fa-phone"></i>
+ <p>+1 999 999999</p>
+ </div>
+
+ <div>
+ <i class="fa fa-envelope"></i>
+ <p><a href="mailto:support@company.com">contact@wanglepc.com</a></p>
+ </div>
+
+ </div>
+
+ <div class="footer-right">
+
+ <p class="footer-company-about">
+ <span>About the company</span>
+ Web Dev Trick is a blog for web designers, graphic designers, web developers &amp; SEO Learner.
+ </p>
+
+ <div class="footer-icons">
+
+ <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+ <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+ <a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+ <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+ </div>
+ </div>
+ </footer>
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

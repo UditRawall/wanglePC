@@ -1,0 +1,609 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*  --------------------------          */
+.container_img_header {
+  background-image: url("images/WanglePC_bg.png");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+
+.text_img_header {
+  border:4px solid white;
+  color: white;
+  font-size: 10vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+
+@media screen and (max-width: 850px)
+{
+  .text_img_header
+  {
+  border:4px solid white;
+  color: white;
+  font-size: 9.5vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 8px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  }
+}
+/*                     */
+
+
+/*                     */
+.nav-item:hover {
+    background-color: black;
+}
+
+.button_header:focus {
+    outline: 0;
+}
+
+.navbar_header .dropdown-menu .form-control {
+    width: 200px;
+}
+
+/*                     */
+
+/*                     */
+.Games_text
+{
+  font-size:7vw;
+  text-decoration:underline;
+}
+
+.Games_text:hover
+{
+  font-size:8.5vw;
+}
+/*                     */
+
+
+/*                     */
+.img_slideslow {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.con_slideslow {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  border: 4px solid black;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row_slideslow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row_slideslow
+{
+  border:4px solid white;
+}
+
+@media screen and (max-width: 650px)
+{
+  .row_slideslow
+  {
+  border:2px solid grey;
+  }
+}
+
+/* Six columns side by side */
+.column_slideslow {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+
+.button_form {
+  border-radius: 5px;
+  background-color: #f4511e;
+  border: 4px solid black;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 50px;
+  padding: 5px;
+  padding-right: 60px;
+  padding-left: 60px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 40px;
+}
+
+.button_form span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_form span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button_form:hover span {
+  padding-right: 25px;
+}
+
+.button_form:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 650px)
+{
+  .button_form
+  {
+  border-radius: 5px;
+  background-color: #f4511e;
+  border: 3px solid black;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 30px;
+  }
+
+  .button_form:hover span
+  {
+  padding-right: 0px;
+  }
+
+  .three_button_text
+  {
+  font-size:9vw;
+  }
+}
+
+/*    ------------------------------------------------------------------------------           */
+
+/*    ------------------------------------------------------------------------------           */
+
+/* style the container */
+.container_form {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+.input_form,
+.btn_form {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+.input_form:hover,
+.btn_form:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+.input_form[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.input_form[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col_form {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row_form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col_form {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+/*    ------------------------------------------------------------------------------           */
+
+
+/*    ------------------------------------------------------------------------------           */
+
+.column_about {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card_about {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.container_about {
+  padding: 0 16px;
+}
+
+.container_about::after, .row_about::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title_about {
+  color: grey;
+}
+
+.button_about {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_about:hover {
+  background-color: #d39e00 !important;
+}
+
+@media screen and (max-width: 650px) {
+  .column_about {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+/*    ------------------------------------------------------------------------------           */
+
+
+/*    ------------------------------------------------------------------------------           */
+.footer-distributed{
+ background-color: #292c2f;
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+ width: 100%;
+ text-align: left;
+ font: bold 16px sans-serif;
+
+ padding: 55px 50px;
+ margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+ display: inline-block;
+ vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+ width: 40%;
+}
+
+.footer-distributed h3{
+ color:  #ffffff;
+ font: normal 36px 'Cookie', cursive;
+ margin: 0;
+}
+
+.footer-distributed h3 span{
+ color:  #5383d3;
+}
+
+
+.footer-distributed .footer-links{
+ color:  #ffffff;
+ margin: 20px 0 12px;
+ padding: 0;
+}
+
+.footer-distributed .footer-links a{
+ display:inline-block;
+ line-height: 1.8;
+ text-decoration: none;
+ color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+ color:  #8f9296;
+ font-size: 14px;
+ font-weight: normal;
+ margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+ width: 35%;
+}
+
+.footer-distributed .footer-center i{
+ background-color:  #33383b;
+ color: #ffffff;
+ font-size: 25px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 42px;
+ margin: 10px 15px;
+ vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+ font-size: 17px;
+ line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+ display: inline-block;
+ color: #ffffff;
+ vertical-align: middle;
+ margin:0;
+}
+
+.footer-distributed .footer-center p span{
+ display:block;
+ font-weight: normal;
+ font-size:14px;
+ line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+ color:  #5383d3;
+ text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+ width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+ line-height: 20px;
+ color:  #92999f;
+ font-size: 13px;
+ font-weight: normal;
+ margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+ display: block;
+ color:  #ffffff;
+ font-size: 14px;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+ margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+ display: inline-block;
+ width: 35px;
+ height: 35px;
+ cursor: pointer;
+ background-color:  #33383b;
+ border-radius: 2px;
+
+ font-size: 20px;
+ color: #ffffff;
+ text-align: center;
+ line-height: 35px;
+
+ margin-right: 3px;
+ margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+ .footer-distributed{
+ font: bold 14px sans-serif;
+
+ }
+
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+ display: block;
+ width: 100%;
+ margin-bottom: 40px;
+ text-align: center;
+ }
+
+ .footer-distributed .footer-center i{
+ margin-left: 0;
+ }
+}
+
+
+
+/* ----------------------------------------------------*       /

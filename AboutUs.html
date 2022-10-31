@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="AboutUs.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="about-section">
+  <div class="image-container">
+  <div class="text_header">AboutUs</div>
+  </div>
+</div>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="AboutUs.html" class="active">Home</a>
+  <a href="index.html">WanglePC</a>
+  <a href="Games.html">Games</a>
+  <a href="Blogs.html">Blogs</a>
+  <h3 style="margin-right:15px; color: white;"><?php  echo $_SESSION['username']; ?></h3>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row_about">
+  <div class="column_about">
+    <div class="card_about">
+      <img src="images\UditRawal.jpg.jpg" alt="TAKTAM" style="width:100%">
+      <div class="container_about"><center>
+        <h2>UDIT RAWAL</h2>
+        <p class="title_about">CEO</p>
+        <p>B.Sc computer science with Specialization in web development <br> (delhi university)</p>
+        <a href="https://www.linkedin.com/in/udit-rawal-72984b252"><button class="button_about">LinkedIn</button></a></center>
+      </div>
+    </div>
+  </div>
+
+  <div class="column_about">
+    <div class="card_about">
+      <img src="images\utsav.jpg.jpg" alt="John" style="width:100%">
+      <div class="container_about"><center>
+        <h2>UTSAV THAKUR</h2>
+        <p class="title_about">CONTENT WRITER</p>
+        <p>B.Sc computer science <br> (delhi university)</p>
+        <a href="https://www.linkedin.com"><button class="button_about">LinkedIn</button></a></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br>
+<footer class="footer-distributed">
+
+ <div class="footer-left">
+
+ <h3>Wangle<span>PC</span></h3>
+
+ <p class="footer-links">
+ <a href="#">Home</a>
+ ·
+ <a href="Blogs.html">Blogs</a>
+ ·
+ <a href="AboutUs.html">AboutUs</a>
+ ·
+ <a href="Games.html">Games</a>
+ .
+ <a href="#">FAQ</a>
+ ·
+ <a href="mailto:someone@gmail.com?Subject=Hello%20again">Contact</a>
+ </p>
+
+ <p class="footer-company-name">wanglepc &copy; 2021</p>
+ </div>
+
+ <div class="footer-center">
+
+ <div>
+ <i class="fa fa-map-marker"></i>
+ <p><span>21 Revolution Street</span> Delhi, India</p>
+ </div>
+
+ <div>
+ <i class="fa fa-phone"></i>
+ <p>+1 999 999999</p>
+ </div>
+
+ <div>
+ <i class="fa fa-envelope"></i>
+ <p><a href="mailto:support@company.com">contact@wanglepc.com</a></p>
+ </div>
+
+ </div>
+
+ <div class="footer-right">
+
+ <p class="footer-company-about">
+ <span>About the company</span>
+ Web Dev Trick is a blog for web designers, graphic designers, web developers &amp; SEO Learner.
+ </p>
+
+ <div class="footer-icons">
+
+ <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+ <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+ <a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+ <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+ </div>
+ </div>
+ </footer>
+
+
+
+</body>
+</html>
